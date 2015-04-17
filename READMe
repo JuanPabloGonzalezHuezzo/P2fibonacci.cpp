@@ -1,0 +1,27 @@
+# P2fibonacci.cpp
+//Juan Pablo González Huezzo / A01224902 //SORRY I used recursion...
+#include <iostream>
+using namespace std;
+
+	long fibonacci(long n){
+		if (n==0){
+			return 0;
+		}
+
+		else if(n==1){
+			return 1;}
+
+		else{
+		return fibonacci(n-2)+fibonacci(n-1);
+		}
+	}
+
+int main(){
+	long x;
+	cout << "Which position number do you want to know fibonacci algorithm's result? " << endl;
+	cin>> x;
+	cout<< "The result for:" << x << " is equal to: " << fibonacci(x) << endl;
+
+return 0;
+}
+
